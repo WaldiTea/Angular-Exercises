@@ -1,41 +1,8 @@
-<h5>Exercise 2: Practacing Databinding</h5>
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <ol>
-        <li>
-          Add a Input field which updates a property ('username') via
-          Two-Way-Binding
-        </li>
-        <li>
-          Output the username property via String Interpolation (in a paragraph
-          below the input)
-        </li>
-        <li>
-          Add a button which may only be clicked if the username is NOT an empty
-          string
-        </li>
-        <li>
-          Upon clicking the button, the username should be reset to an empty
-          string
-        </li>
-      </ol>
-      <hr />
-      <label for="input-username">Username</label>
-      <input
-        type="text"
-        id="input-username"
-        class="form-control"
-        [(ngModel)]="inputName"
-      />
-      <p>{{ inputName }}</p>
-      <button
-        class="btn btn-primary"
-        [disabled]="inputName === ''"
-        (click)="inputName = ''"
-      >
-        Reset User
-      </button>
+      <app-exercise-components></app-exercise-components>
+      <app-exercise-databinding></app-exercise-databinding>
     </div>
   </div>
 </div>
